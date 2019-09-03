@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.browser.api'
+description = 'browser - API - model'
+dependencies {
+  compile project(':infrastructure:datastore:api:model')
+}

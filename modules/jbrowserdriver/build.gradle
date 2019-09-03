@@ -1,0 +1,7 @@
+group = 'com.walterjwhite.modules.browser.modules'
+description = 'browser - modules - jbrowserdriver'
+dependencies {
+  compile project(':infrastructure:dependencies:jbrowserdriver')
+  compile project(':infrastructure:dependencies:slf4j-api')
+  compile project(':infrastructure:dependencies:slf4j-simple')
+}

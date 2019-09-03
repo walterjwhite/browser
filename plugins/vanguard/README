@@ -1,0 +1,18 @@
+as of date:
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[1]/div[1]/div/span[2]/text()
+
+names:
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[1]/span/a/span/span[1]
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[2]/td[1]/span/a/span/span[1]
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[3]/td[1]/span/a/span/span[1]
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[4]/td[1]/span/a/span/span[1]
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[5]/td[1]/span/a/span/span[1]
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[6]/td[1]/span/a/span/span[1]
+
+current value:
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[2]/span
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[2]/td[2]/span
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[3]/td[2]/span
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[4]/td[2]/span
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[5]/td[2]/span
+//*[@id="main-content"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[6]/td[2]/span

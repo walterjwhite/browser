@@ -1,0 +1,14 @@
+group = 'com.walterjwhite.modules.browser.plugins'
+description = 'browser - plugins - virgin-pulse'
+dependencies {
+  compile project(':infrastructure:datastore:api:model')
+  compile project(':infrastructure:datastore:modules:snakeyaml')
+  compile project(':infrastructure:dependencies:hikari-jdbc-connection-pool')
+  compile project(':infrastructure:dependencies:hibernate-hikari')
+  testCompile project(':infrastructure:datastore:modules:download:providers:local')
+  testCompile project(':infrastructure:datastore:modules:xz')
+  testCompile project(':infrastructure:datastore:modules:encryption:impl')
+  testCompile project(':infrastructure:dependencies:h2')
+  testCompile project(':infrastructure:dependencies:slf4j-simple')
+  testCompile project(':infrastructure:datastore:modules:property-test')
+}

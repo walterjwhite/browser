@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.browser.modules'
+description = 'browser - modules - ashot'
+dependencies {
+  compile project(':infrastructure:dependencies:ashot')
+}

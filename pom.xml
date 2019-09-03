@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java</groupId>
+    <artifactId>modules</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules</groupId>
+  <artifactId>browser</artifactId>
+  <packaging>pom</packaging>
+  <name>browser - parent pom</name>
+  <modules>
+    <module>api</module>
+    <module>impl</module>
+    <module>modules</module>
+    <module>plugins</module>
+  </modules>
+  <dependencies>
+    <!--
+				<dependency>
+					<groupId>javax.jdo</groupId>
+					<artifactId>jdo-api</artifactId>
+					<version>3.0.1</version>
+				</dependency>
+		-->
+  </dependencies>
+  <scm>
+    <connection>scm:git:ssh://git@localhost:/projects/active/github.com/walterjwhite/browser.git</connection>
+    <developerConnection>scm:git:ssh://git@localhost:/projects/active/github.com/walterjwhite/browser.git</developerConnection>
+    <url>https://github.com/walterjwhite/browser.git</url>
+    <tag>java-0.0.16</tag>
+  </scm>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules</groupId>
+    <artifactId>browser</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.browser</groupId>
+  <artifactId>plugins</artifactId>
+  <packaging>pom</packaging>
+  <name>browser - plugins - Parent POM</name>
+  <description>browser - plugins - parent POM</description>
+  <modules>
+    <module>crawler</module>
+    <module>discover</module>
+    <module>pnc</module>
+    <module>prudential</module>
+    <module>vanguard</module>
+    <module>virgin-pulse</module>
+    <module>voya</module>
+  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.browser.api</groupId>
+      <artifactId>service</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.browser</groupId>
+      <artifactId>impl</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

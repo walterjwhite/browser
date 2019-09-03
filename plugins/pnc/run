@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar target/pnc-0.0.15-SNAPSHOT-shaded.jar -IVFilePath /etc/remote/iv -KeyFilePath /etc/remote/key -PNCUsername 4wkpKK5i8KHL9pWwfxoC -PNCPassword gNyi6ZwGquDjMC47JCvd

@@ -1,0 +1,19 @@
+group = 'com.walterjwhite.browser.plugins'
+description = 'browser - plugins - pnc-cli'
+dependencies {
+  compile project(':infrastructure:datastore:modules:jbrowserdriver')
+  compile project(':infrastructure:datastore:modules:ashot')
+  compile project(':infrastructure:datastore:modules:browser:plugins:pnc')
+  compile project(':infrastructure:datastore:modules:cli')
+  compile project(':infrastructure:datastore:modules:snakeyaml')
+  compile project(':infrastructure:datastore:modules:download:providers:local')
+  compile project(':infrastructure:datastore:modules:xz')
+  compile project(':infrastructure:datastore:modules:encryption:impl')
+  compile project(':infrastructure:dependencies:hikari-jdbc-connection-pool')
+  compile project(':infrastructure:dependencies:hibernate-hikari')
+  compile project(':infrastructure:dependencies:h2')
+  compile project(':infrastructure:dependencies:p6spy')
+  compile project(':infrastructure:dependencies:slf4j-simple')
+  compile project(':infrastructure:datastore:modules:encryption')
+  testCompile project(':infrastructure:datastore:modules:property-test')
+}

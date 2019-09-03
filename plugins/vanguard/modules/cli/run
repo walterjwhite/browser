@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar target/vanguard-cli-0.0.15-SNAPSHOT-shaded.jar -IVFilePath /etc/remote/iv -KeyFilePath /etc/remote/key -VanguardUsername $(decrypt-password VanguardUsername) -VanguardPassword $(decrypt-password VanguardUsername) -Debug true

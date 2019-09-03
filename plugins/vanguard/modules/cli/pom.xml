@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.browser.plugins.vanguard</groupId>
+    <artifactId>modules</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.browser.plugins.vanguard.modules</groupId>
+  <artifactId>cli</artifactId>
+  <packaging>jar</packaging>
+  <name>browser - plugins - vanguard-cli</name>
+  <description>browser - plugins - vanguard-cli</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.inject.modules.cli</groupId>
+      <artifactId>api</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.modules.browser.modules</groupId>-->
+    <!--<artifactId>jbrowserdriver</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--</dependency>-->
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.browser.modules</groupId>
+      <artifactId>ashot</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.browser.plugins.vanguard</groupId>
+      <artifactId>impl</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.infrastructure.google-guice.modules</groupId>-->
+    <!--<artifactId>cli</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.infrastructure.google-guice.modules</groupId>-->
+    <!--<artifactId>property-test</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--<scope>test</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.modules.serialization.modules</groupId>-->
+    <!--<artifactId>snakeyaml</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.modules.file.providers</groupId>-->
+    <!--<artifactId>local</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.modules.compression.modules</groupId>-->
+    <!--<artifactId>xz</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--</dependency>-->
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.encryption</groupId>
+      <artifactId>impl</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

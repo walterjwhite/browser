@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.browser.modules</groupId>
+    <artifactId>jbrowserdriver</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.browser.modules.jbrowserdriver</groupId>
+  <artifactId>impl</artifactId>
+  <packaging>jar</packaging>
+  <name>browser - modules - jbrowserdriver - impl</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.dependencies</groupId>
+      <artifactId>jbrowserdriver</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+</project>

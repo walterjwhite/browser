@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.browser.plugins</groupId>
+    <artifactId>discover</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.browser.plugins.discover</groupId>
+  <artifactId>modules</artifactId>
+  <packaging>pom</packaging>
+  <name>browser - plugins - discover - modules</name>
+  <description>browser - plugins - discover - modules</description>
+  <modules>
+    <module>cli</module>
+  </modules>
+</project>
