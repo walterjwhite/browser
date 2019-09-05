@@ -22,7 +22,9 @@ public class DefaultVoyaService implements VoyaService {
 
   @Inject
   public DefaultVoyaService(
-          BrowserService browserService, @Property(VoyaUrl.class) final String voyaUrl, TokenService tokenService) {
+      BrowserService browserService,
+      @Property(VoyaUrl.class) final String voyaUrl,
+      TokenService tokenService) {
     super();
     this.browserService = browserService;
     this.voyaUrl = voyaUrl;
