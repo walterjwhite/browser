@@ -130,7 +130,7 @@ public class DefaultBrowserService implements BrowserService {
           .get(browserSession.getBrowserSessionResourceURIs().size() - 1);
     }
 
-    throw (new IllegalStateException("Browser has not visited any resource URIs yet."));
+    throw new IllegalStateException("Browser has not visited any resource URIs yet.");
   }
 
   @Override

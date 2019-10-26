@@ -47,6 +47,6 @@ public enum BrowserScriptActionTypeHandler {
       }
     }
 
-    throw (new IllegalArgumentException(browserScriptActionType + " is not supported."));
+    throw new IllegalArgumentException(browserScriptActionType + " is not supported.");
   }
 }

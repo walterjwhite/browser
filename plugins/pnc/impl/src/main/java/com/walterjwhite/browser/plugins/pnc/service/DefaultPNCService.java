@@ -104,7 +104,7 @@ public class DefaultPNCService implements PNCService {
       return "";
     }
 
-    throw (new IllegalStateException("Unmatched Question:" + question));
+    throw new IllegalStateException("Unmatched Question:" + question);
   }
 
   public void updateAccountBalances() {
