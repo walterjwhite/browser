@@ -1,51 +1,42 @@
 package com.walterjwhite.browser.impl.service;
 
-import com.walterjwhite.browser.api.handler.PagePostProcessor;
-import com.walterjwhite.browser.api.handler.PostGetHandler;
-import com.walterjwhite.browser.api.handler.PreGetHandler;
 import com.walterjwhite.browser.api.model.BrowserSession;
 import com.walterjwhite.browser.api.model.BrowserSessionResourceURI;
 import com.walterjwhite.browser.api.model.ResourceURI;
 import com.walterjwhite.browser.api.service.BrowserService;
-import com.walterjwhite.browser.api.service.PageRendererService;
-import com.walterjwhite.browser.impl.service.util.URIUtil;
-import com.walterjwhite.datastore.api.repository.Repository;
-import java.util.Set;
 import javax.inject.Inject;
-import javax.inject.Provider;
 import javax.transaction.Transactional;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class DefaultBrowserService implements BrowserService {
-  protected final Provider<Repository> repositoryProvider;
+  //  protected final Provider<Repository> repositoryProvider;
 
   protected BrowserSession browserSession;
   protected final WebDriver webDriver;
-  protected final PageRendererService pageRendererService;
-  protected final Set<PostGetHandler> postGetHandlers;
-  protected final Set<PagePostProcessor> pagePostProcessors;
-  protected final Set<PreGetHandler> preGetHandlers;
+  //  protected final PageRendererService pageRendererService;
+  //  protected final Set<PostGetHandler> postGetHandlers;
+  //  protected final Set<PagePostProcessor> pagePostProcessors;
+  //  protected final Set<PreGetHandler> preGetHandlers;
 
   @Inject
   public DefaultBrowserService(
-      Provider<Repository> repositoryProvider,
-      BrowserSession browserSession,
-      WebDriver webDriver,
+      //      Provider<Repository> repositoryProvider,
+      BrowserSession browserSession, WebDriver webDriver /*,
       PageRendererService pageRendererService,
       Set<PostGetHandler> postGetHandlers,
       Set<PreGetHandler> preGetHandlers,
-      Set<PagePostProcessor> pagePostProcessors) {
+      Set<PagePostProcessor> pagePostProcessors*/) {
     super();
 
-    this.repositoryProvider = repositoryProvider;
+    //    this.repositoryProvider = repositoryProvider;
     this.browserSession = browserSession;
     this.webDriver = webDriver;
-    this.pageRendererService = pageRendererService;
-
-    this.postGetHandlers = postGetHandlers;
-    this.preGetHandlers = preGetHandlers;
-    this.pagePostProcessors = pagePostProcessors;
+    //    this.pageRendererService = pageRendererService;
+    //
+    //    this.postGetHandlers = postGetHandlers;
+    //    this.preGetHandlers = preGetHandlers;
+    //    this.pagePostProcessors = pagePostProcessors;
   }
 
   @Transactional
@@ -64,10 +55,11 @@ public class DefaultBrowserService implements BrowserService {
 
     doPreGet(browserSessionResourceURI);
     doGet(resourceURI.getName());
-    browserSession =
-        repositoryProvider
-            .get()
-            .create(browserSession); // how to differentiate create/update in JDO (TODO:)
+    // TODO: audit aspects should not be part of the code, but a separate module
+    //    browserSession =
+    //        repositoryProvider
+    //            .get()
+    //            .create(browserSession); // how to differentiate create/update in JDO (TODO:)
     browserSessionResourceURI =
         browserSession
             .getBrowserSessionResourceURIs()
@@ -78,23 +70,23 @@ public class DefaultBrowserService implements BrowserService {
   }
 
   protected void doPagePostProcess(BrowserSessionResourceURI browserSessionResourceURI) {
-    for (PagePostProcessor pagePostProcessor : pagePostProcessors) {
-      if (pagePostProcessor.isPostProcess(
-          URIUtil.removeProtocol(browserSessionResourceURI.getResourceURI().getName())))
-        pagePostProcessor.doPostProcess(this, browserSessionResourceURI);
-    }
+    //    for (PagePostProcessor pagePostProcessor : pagePostProcessors) {
+    //      if (pagePostProcessor.isPostProcess(
+    //          URIUtil.removeProtocol(browserSessionResourceURI.getResourceURI().getName())))
+    //        pagePostProcessor.doPostProcess(this, browserSessionResourceURI);
+    //    }
   }
 
   protected void doPostGet(BrowserSessionResourceURI browserSessionResourceURI) {
-    for (PostGetHandler postGetHandler : postGetHandlers) {
-      postGetHandler.doPostGet(this, browserSessionResourceURI);
-    }
+    //    for (PostGetHandler postGetHandler : postGetHandlers) {
+    //      postGetHandler.doPostGet(this, browserSessionResourceURI);
+    //    }
   }
 
   protected void doPreGet(BrowserSessionResourceURI browserSessionResourceURI) {
-    for (PreGetHandler preGetHandler : preGetHandlers) {
-      preGetHandler.doPreGet(this, browserSessionResourceURI);
-    }
+    //    for (PreGetHandler preGetHandler : preGetHandlers) {
+    //      preGetHandler.doPreGet(this, browserSessionResourceURI);
+    //    }
   }
 
   protected void doGet(final String uri) {
@@ -103,7 +95,7 @@ public class DefaultBrowserService implements BrowserService {
 
   @Override
   public void renderPage() {
-    pageRendererService.save(this, getCurrentResourceURI());
+    //    pageRendererService.save(this, getCurrentResourceURI());
   }
 
   public void executeScript(final String scriptText) {

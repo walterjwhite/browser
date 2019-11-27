@@ -1,10 +1,12 @@
-package com.walterjwhite.browser.impl.service;
+package com.walterjwhite.browser.jbrowserdriver;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
 import com.walterjwhite.browser.api.handler.PagePostProcessor;
 import com.walterjwhite.browser.api.handler.PreGetHandler;
 import com.walterjwhite.browser.api.service.BrowserService;
+import com.walterjwhite.browser.impl.service.DefaultBrowserService;
+import com.walterjwhite.browser.impl.service.VoidPagePostProcessor;
 
 public class BrowserServiceModule extends AbstractModule {
   @Override

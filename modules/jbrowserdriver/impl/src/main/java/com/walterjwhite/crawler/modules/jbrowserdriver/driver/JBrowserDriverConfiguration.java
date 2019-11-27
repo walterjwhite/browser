@@ -1,7 +1,7 @@
 package com.walterjwhite.crawler.modules.jbrowserdriver.driver;
 
 import com.walterjwhite.crawler.modules.jbrowserdriver.driver.property.BrowserSSLValidation;
-import com.walterjwhite.property.api.enumeration.ProxyType;
+import java.util.Optional;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,11 +25,11 @@ public class JBrowserDriverConfiguration {
 
   protected String cachePath;
 
-  protected ProxyType proxyType;
+  protected Optional<String> proxyType;
 
-  protected String proxyHost;
+  protected Optional<String> proxyHost;
 
-  protected int proxyPort;
+  protected Optional<Integer> proxyPort;
 
   protected BrowserSSLValidation browserSSLValidation;
 

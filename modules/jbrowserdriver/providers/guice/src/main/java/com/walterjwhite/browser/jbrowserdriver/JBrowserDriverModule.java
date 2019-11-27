@@ -1,8 +1,7 @@
-package com.walterjwhite.crawler.modules.jbrowserdriver;
+package com.walterjwhite.browser.jbrowserdriver;
 
 import com.google.inject.AbstractModule;
 import com.machinepublishers.jbrowserdriver.Settings;
-import com.walterjwhite.browser.impl.service.BrowserServiceModule;
 import com.walterjwhite.crawler.modules.jbrowserdriver.driver.JBrowserDriverConfiguration;
 import com.walterjwhite.crawler.modules.jbrowserdriver.driver.JBrowserDriverConfigurationProvider;
 import com.walterjwhite.crawler.modules.jbrowserdriver.driver.JBrowserDriverProvider;

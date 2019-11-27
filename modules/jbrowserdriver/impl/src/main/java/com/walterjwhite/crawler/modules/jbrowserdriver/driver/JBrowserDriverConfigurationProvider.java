@@ -6,6 +6,7 @@ import com.walterjwhite.property.api.property.ProxyHost;
 import com.walterjwhite.property.api.property.ProxyPort;
 import com.walterjwhite.property.api.property.ProxyType;
 import com.walterjwhite.property.impl.annotation.Property;
+import java.util.Optional;
 import javax.inject.Inject;
 import javax.inject.Provider;
 
@@ -15,9 +16,9 @@ public class JBrowserDriverConfigurationProvider implements Provider<JBrowserDri
   @Inject
   public JBrowserDriverConfigurationProvider(
       @Property(BrowserCachePath.class) String browserCachePath,
-      @Property(ProxyHost.class) String proxyHost,
-      @Property(ProxyPort.class) int proxyPort,
-      @Property(ProxyType.class) com.walterjwhite.property.api.enumeration.ProxyType proxyType,
+      @Property(ProxyHost.class) Optional proxyHost,
+      @Property(ProxyPort.class) Optional proxyPort,
+      @Property(ProxyType.class) Optional proxyType,
       @Property(SaveAttachments.class) boolean saveAttachments,
       @Property(Timeout.class) int timeout,
       @Property(UberJarPath.class) String uberJarPath,

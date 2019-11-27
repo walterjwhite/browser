@@ -66,13 +66,15 @@ public class SettingsBuilderProvider implements Provider<Settings.Builder> {
       builder.cacheDir(new File(jBrowserDriverConfiguration.getCachePath()));
     }
 
-    if (jBrowserDriverConfiguration.getProxyType() != null
+    if (jBrowserDriverConfiguration.getProxyType().isPresent()
+        && jBrowserDriverConfiguration.getProxyHost().isPresent()
+        && jBrowserDriverConfiguration.getProxyPort().isPresent()
     /*&& proxyType > 0*/ ) {
       builder.proxy(
           new ProxyConfig(
-              getProxy(jBrowserDriverConfiguration.getProxyType()),
-              jBrowserDriverConfiguration.getProxyHost(),
-              jBrowserDriverConfiguration.getProxyPort()));
+              getProxy(ProxyType.valueOf(jBrowserDriverConfiguration.getProxyType().get())),
+              jBrowserDriverConfiguration.getProxyHost().get(),
+              jBrowserDriverConfiguration.getProxyPort().get()));
     }
   }
 
